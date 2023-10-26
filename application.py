@@ -22,20 +22,6 @@ def reg_item():
 def view_contact():
     return render_template("contact.html")
 
-# @application.route("/submit_item")
-# def reg_item_submit():
-#     name="request.args.get("name")
-#     seller="request.args.get("seller")
-#     addr="request.args.get("addr")
-#     email="request.args.get("email")
-#     category="request.args.get("category")
-#     card="request.args.get("card")
-#     status="request.args.get("status")
-#     phone="request.args.get("phone")
-    
-#     print(name,addr,tel,category,park,time,site)
-#     #return render_template("reg_item.html")
-
 @application.route("/submit_item_post", methods=['POST'])
 def reg_item_submit_post():
     image_file=request.files["file"]
